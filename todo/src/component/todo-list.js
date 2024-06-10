@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { gql } from 'graphql-tag';
+import './todo-list.css'; // Import the CSS file
 
 const GET_TODOS = gql`
   query {
@@ -82,7 +83,7 @@ const TodoList = () => {
     <table>
       <thead>
         <tr>
-          <th>Text</th>
+          <th>Todos</th>
           <th>Actions</th>
         </tr>
       </thead>
